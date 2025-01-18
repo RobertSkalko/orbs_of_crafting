@@ -14,7 +14,7 @@ public class Orbs extends ExileKeyHolder<ExileCurrency> {
     // uh, how do i make sure the order of class instantiations is correct across mods..?
 
     public static Orbs INSTANCE = (Orbs) new Orbs(OrbsRef.REGISTER_INFO)
-            .itemIds(new ItemIdProvider(x -> OrbsRef.id("currency/" + x)))
+            .itemIds(new ItemIdProvider(x -> OrbsRef.id(x)))
             .createItems(new ItemCreator<ExileCurrency>(x -> new Item(new Item.Properties().stacksTo(64))), x -> RegObj.register(x.itemID(), x.item(), OrbsOfCraftingMain.ITEMS));
 
     public Orbs(ModRequiredRegisterInfo modRegisterInfo) {

@@ -11,7 +11,7 @@ import java.util.Locale;
 
 public enum OrbWords implements ITranslated {
     MOD_NAME("Orbs of Crafting"),
-    Currency("Currency"),
+    Currency("Crafting Orb"),
     THIS_IS_NOT_A("This is not a %1$s"),
     POTENTIAL_COST("Potential Cost: %1$s"),
     NOT_A_POTENTIAL_CONSUMER("Does not consume potential when used"),

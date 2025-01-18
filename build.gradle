@@ -35,14 +35,6 @@ apply from: 'https://raw.githubusercontent.com/RobertSkalko/ModResources/refs/he
 
 // --- COMMON BUILD SCRIPT END ---
 
-repositories {
-    maven { url = "https://maven.theillusivec4.top/" } // curios
-}
-
-dependencies {
-    implementation fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
-}
-
 publishMods {
 
     curseforge {

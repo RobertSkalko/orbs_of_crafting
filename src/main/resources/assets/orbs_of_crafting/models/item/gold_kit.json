@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "auto_repair_kit:item/gold_kit"
-    }
-}

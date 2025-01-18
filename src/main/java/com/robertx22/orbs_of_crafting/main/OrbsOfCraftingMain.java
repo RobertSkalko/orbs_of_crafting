@@ -6,12 +6,12 @@ import com.robertx22.orbs_of_crafting.configs.OrbsConfig;
 import com.robertx22.orbs_of_crafting.lang.OrbWords;
 import com.robertx22.orbs_of_crafting.misc.OnClick;
 import com.robertx22.orbs_of_crafting.register.ExileCurrency;
+import com.robertx22.orbs_of_crafting.register.Orbs;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -71,7 +71,7 @@ public class OrbsOfCraftingMain {
     public static void initDeferredEntries() {
 
         CREATIVE_TAB.register("tab", () -> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 2)
-                .icon(() -> Items.DIAMOND.getDefaultInstance())
+                .icon(() -> Orbs.INSTANCE.LEGENDARY_TOOL_ENCHANT.getItem().getDefaultInstance())
                 .title(OrbWords.MOD_NAME.get().withStyle(ChatFormatting.DARK_PURPLE, ChatFormatting.BOLD))
                 .displayItems(new CreativeModeTab.DisplayItemsGenerator() {
                     @Override

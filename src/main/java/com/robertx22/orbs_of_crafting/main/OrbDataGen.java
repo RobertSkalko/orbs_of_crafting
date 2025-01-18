@@ -36,16 +36,6 @@ public class OrbDataGen implements DataProvider {
         ExileLangFile.createFile(OrbsRef.MODID, "");
 
         return CompletableFuture.completedFuture(null); // todo this is bad, but would it work?
-
-        /*
-        ObeliskDatabase.OBELISK_TYPE.getDatapackGenerator().run(pOutput);
-        ObeliskDatabase.ATTRIBUTE_AFFIX.getDatapackGenerator().run(pOutput);
-
-        //DataProvider.saveStable(pOutput, x.serializeRecipe(), target);
-
-
-         */
-        // i think this is only needed if you dont directly save the jsons yourself?
     }
 
 
