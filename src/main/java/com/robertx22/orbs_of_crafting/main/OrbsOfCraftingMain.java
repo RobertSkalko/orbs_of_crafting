@@ -59,6 +59,8 @@ public class OrbsOfCraftingMain {
             }
         });
 
+        OrbCommands.init();
+
         System.out.println("Orbs of Crafting loaded.");
     }
 

@@ -44,6 +44,12 @@ public class OnClick {
             @Override
             public Result tryApply(Player player, ItemStack craftedStack, ItemStack currency, Slot slot) {
                 var opt = ExileCurrency.get(currency);
+                var opt2 = ExileCurrency.get(craftedStack);
+
+                if (opt2.isPresent()) {
+                    // we don't want to ding the player when they try stacking 2 currencies
+                    return new Result(false);
+                }
 
                 if (opt.isPresent()) {
                     LocReqContext ctx = new LocReqContext(player, craftedStack.copy(), currency);

@@ -19,14 +19,14 @@ public class OrbsConfig {
         return CONFIG;
     }
 
-    public ForgeConfigSpec.IntValue REPAIR_INTERVAL;
+    //  public ForgeConfigSpec.IntValue REPAIR_INTERVAL;
 
 
     OrbsConfig(ForgeConfigSpec.Builder b) {
-        b.comment("Auto Repair Kits Configs")
+        b.comment("Orbs of Crafting Config TODO")
                 .push("general");
 
-        REPAIR_INTERVAL = b.comment("Example, at default setting of 100 ticks, (1 second is 20 ticks), the repair kits will automatically repair player's gear every 5 seconds").defineInRange("repair_interval", 100, 1, 5000);
+        // REPAIR_INTERVAL = b.comment("Example, at default setting of 100 ticks, (1 second is 20 ticks), the repair kits will automatically repair player's gear every 5 seconds").defineInRange("repair_interval", 100, 1, 5000);
 
         b.pop();
     }
