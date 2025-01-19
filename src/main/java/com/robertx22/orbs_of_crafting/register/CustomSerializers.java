@@ -1,5 +1,6 @@
-package com.robertx22.orbs_of_crafting.custom_ser;
+package com.robertx22.orbs_of_crafting.register;
 
+import com.robertx22.library_of_exile.custom_ser.CustomSerializer;
 import com.robertx22.orbs_of_crafting.register.mods.base.ItemModification;
 import com.robertx22.orbs_of_crafting.register.reqs.base.ItemRequirement;
 
