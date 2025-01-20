@@ -263,10 +263,14 @@ public class ExileCurrency implements ITranslated, IAutoGson<ExileCurrency>, Jso
         if (!type.isEmpty()) {
             if (type.stream().noneMatch(x -> x.isValid(context.player, new StackHolder(context.stack)))) {
                 if (type.size() == 1) {
-                    return ExplainedResult.failure(OrbWords.THIS_IS_NOT_A.get(type.get(0).getTranslation(TranslationType.NAME).getTranslatedName()));
+                    return ExplainedResult.failure(type.get(0).getDescWithParams());
 
                 } else {
-                    return ExplainedResult.failure(OrbWords.THIS_IS_NOT_A.get(ExileTooltipUtils.joinMutableComps(type.stream().map(x -> x.getTranslation(TranslationType.NAME).getTranslatedName()).iterator(), Component.literal(" or "))));
+                    List<MutableComponent> all = new ArrayList<>();
+                    for (ItemRequirement req : type) {
+                        all.add(req.getDescWithParams());
+                    }
+                    return ExplainedResult.failure(ExileTooltipUtils.joinMutableComps(all.iterator(), Component.literal(" or ")));
                 }
             }
         }
