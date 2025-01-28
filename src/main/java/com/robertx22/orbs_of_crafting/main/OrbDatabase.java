@@ -28,13 +28,7 @@ public class OrbDatabase extends ExileDatabaseInit {
         Database.addRegistry(new ExileRegistryContainer<>(OrbDatabase.CURRENCY, "socket_adder"));
     }
 
-    @Override
-    public void registerGatherEvents() {
-
-
-    }
-
-
+  
     public static ExileRegistryContainer<ExileCurrency> Currency() {
         return Database.getRegistry(CURRENCY);
     }

@@ -44,7 +44,7 @@ public class DestroyItemMod extends ItemModification {
     @Override
     public TranslationBuilder createTranslationBuilder() {
         return TranslationBuilder.of(OrbsRef.MODID)
-                .desc(ExileTranslation.registry(OrbsRef.MODID, this, "DESTROYS the Item!"));
+                .desc(ExileTranslation.registry( this, "DESTROYS the Item!"));
     }
 
     @Override

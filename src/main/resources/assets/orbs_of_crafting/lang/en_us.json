@@ -11,6 +11,8 @@
 	"orbs_of_crafting.item_requirement.is_tool_tag": "Must be tagged as #Tool",
 	"orbs_of_crafting.words.always_does": "Always does:",
 	"orbs_of_crafting.words.currency": "Crafting Orb",
+	"orbs_of_crafting.words.drag_and_drop": "[Stack/Drag on another item to use]",
+	"orbs_of_crafting.words.drag_no_work_creative": "Item can not be used in Creative Mode!",
 	"orbs_of_crafting.words.mod_name": "Orbs of Crafting",
 	"orbs_of_crafting.words.not_a_potential_consumer": "Does not consume potential when used",
 	"orbs_of_crafting.words.outcome_tip": "%1$s - %2$s",

@@ -34,7 +34,7 @@ public class IsDamagedReq extends ItemRequirement {
     @Override
     public TranslationBuilder createTranslationBuilder() {
         return TranslationBuilder.of(OrbsRef.MODID)
-                .desc(ExileTranslation.registry(OrbsRef.MODID, this, "Must be a Damaged Item")
+                .desc(ExileTranslation.registry( this, "Must be a Damaged Item")
                 );
     }
 

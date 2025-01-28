@@ -28,7 +28,7 @@ public class HasNoEnchantsReq extends ItemRequirement {
     @Override
     public TranslationBuilder createTranslationBuilder() {
         return TranslationBuilder.of(OrbsRef.MODID)
-                .desc(ExileTranslation.registry(OrbsRef.MODID, this, "Must have no Enchantments")
+                .desc(ExileTranslation.registry( this, "Must have no Enchantments")
                 );
     }
 

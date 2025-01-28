@@ -53,7 +53,7 @@ public class IsNoneReq extends ItemRequirement {
     @Override
     public TranslationBuilder createTranslationBuilder() {
         return TranslationBuilder.of(OrbsRef.MODID)
-                .desc(ExileTranslation.registry(OrbsRef.MODID, this, desc)
+                .desc(ExileTranslation.registry( this, desc)
                 );
     }
 

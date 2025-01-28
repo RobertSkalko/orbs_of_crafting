@@ -42,7 +42,7 @@ public class DoNothingItemMod extends ItemModification {
     @Override
     public TranslationBuilder createTranslationBuilder() {
         return TranslationBuilder.of(OrbsRef.MODID)
-                .desc(ExileTranslation.registry(OrbsRef.MODID, this, "Does Nothing"));
+                .desc(ExileTranslation.registry( this, "Does Nothing"));
     }
 
 }

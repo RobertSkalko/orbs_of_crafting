@@ -49,6 +49,6 @@ public class OrbsConstructor extends OrderedModConstructor {
 
     @Override
     public void registerDatabaseEntries() {
-        OrbDatabase.INSTANCE.registerGatherEvents();
+   
     }
 }

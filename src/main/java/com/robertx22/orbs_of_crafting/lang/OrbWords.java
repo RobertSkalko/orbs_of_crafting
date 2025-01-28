@@ -10,6 +10,8 @@ import net.minecraft.network.chat.MutableComponent;
 import java.util.Locale;
 
 public enum OrbWords implements ITranslated {
+    DRAG_NO_WORK_CREATIVE("Item can not be used in Creative Mode!"),
+    DRAG_AND_DROP("[Stack/Drag on another item to use]"),
     MOD_NAME("Orbs of Crafting"),
     Currency("Crafting Orb"),
     THIS_IS_NOT_A("This is not a %1$s"),

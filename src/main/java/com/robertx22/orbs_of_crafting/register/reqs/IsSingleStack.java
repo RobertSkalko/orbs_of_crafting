@@ -30,7 +30,7 @@ public class IsSingleStack extends ItemRequirement {
     @Override
     public TranslationBuilder createTranslationBuilder() {
         return TranslationBuilder.of(OrbsRef.MODID)
-                .desc(ExileTranslation.registry(OrbsRef.MODID, this, "Must be a Single Item")
+                .desc(ExileTranslation.registry( this, "Must be a Single Item")
                 );
     }
 
